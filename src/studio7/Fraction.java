@@ -11,13 +11,14 @@ public class Fraction {
 		this.denominator = deno;
 	}
 	
-	public  addFraction(Fraction Other) {
-		int newNumerator = this.numerator * Other denominator;
-		return this.numerator/this.denominator
+	public Fraction addFraction(Fraction Other) {
+		int newNumerator = (this.numerator * Other.denominator)+ (Other.numerator * this.denominator);
+		int newDenominator = Other.denominator * this.denominator;
+		return new Fraction(newNumerator, newDenominator);
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+     
 	}
 
 }
